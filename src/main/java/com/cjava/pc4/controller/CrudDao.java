@@ -6,6 +6,7 @@ import java.util.List;
 public interface CrudDao<T> {
     
     public List<T> findAll() throws SQLException;
+    public void insertElement(T element) throws SQLException;
     public T findById(int id) throws SQLException;
     public void updateElement(T elemnt) throws SQLException;
     public void deleteElement(int id) throws SQLException;
